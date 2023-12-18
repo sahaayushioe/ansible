@@ -1,0 +1,15 @@
+1. Install packages on control node
+yum -y install epel-release
+yum -y install ansible
+
+2. Install python3 on managed hosts
+yum -y install python3 
+
+3. Set Hostname,IP and user devops on both Control and managed nodes
+
+4. Generate ssh key on control node and copy it to managed hosts.
+ssh-copy-id devops@IP 
+
+where IP is ip of managed hosts.
+
+

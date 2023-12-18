@@ -10,3 +10,4 @@ Introduction
 - `Inventory File` - It is a text file written in `INI` format that contains IP Addresses of the `Managed Hosts` on which actions has to be taken.
 - `Ansible Configuration File` - This file specifies the location of the `inventory` file along with other additional information.
 - `Ansible` can be used to manage and configure `Linux`, `Mac`, `Windows` and even networking devices such as `router` and `switches`
+- We will install ansible package on managed hosts and python3 package on managed hosts.
