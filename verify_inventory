@@ -18,7 +18,7 @@ You can used command module to use commands used in bash shell of linux
 # ansible -i inventory "dev" -m command -a "yum -y install httpd"
 
 
-Ansible modules:- Ansible modules are units of code that execute tasks specified inside the module.
+3. Ansible modules:- Ansible modules are units of code that execute tasks specified inside the module.
 Commands:-
 ansible-doc -l  ---> list all modules
 ansible-doc yum  --> similar to man page of yum command on linux that has details of yum module usage and supported parameter.
