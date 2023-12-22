@@ -1,0 +1,26 @@
+1. Navigate to directory where inventory file is located and run below command.
+# ansible-inventory --list     ---> list all hosts inside inventory
+# ansible -i inventory "all" --list-hosts  --->  list all hosts
+# ansible -i inventory "dev" --list-hosts    ---> list hosts inside dev group of inventory file.
+# ansible -i inventory "all" -m ping  ---> ping all hosts inside inventory file.
+
+
+2. Adhoc commands
+An Ansible ad hoc command is used to perform single task and they are not reusable.
+Examples
+A. to install latedt verison of httpd package on dev machines(nodes)
+Syntax :- ansible -i <inventory file name> "<hosts on whcih you want to perform task >" -m <module name> -a "<paramater of the module>"
+# ansible -i inventory "dev" -m yum -a "name=httpd state=latest"
+B. to ping all hosts
+# ansible -i inventory "all" -m ping
+
+You can used command module to use commands used in bash shell of linux
+# ansible -i inventory "dev" -m command -a "yum -y install httpd"
+
+
+Ansible modules:- Ansible modules are units of code that execute tasks specified inside the module.
+Commands:-
+ansible-doc -l  ---> list all modules
+ansible-doc yum  --> similar to man page of yum command on linux that has details of yum module usage and supported parameter.
+
+
