@@ -28,8 +28,7 @@ where IP is ip of managed hosts.
 192.168.1.104
 
 [webservers:children]
-dev
-test
+prod
 
 7. Create ansible configuration file name ansible.cfg on control node
 
