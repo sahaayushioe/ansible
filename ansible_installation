@@ -39,3 +39,13 @@ remote_user=devops
 [privilege_escalation]
 become=true
 
+
+Note:
+
+Precedence(Priority) of ansible config file
+
+1. ansible.cfg file defined by ANSIBLE_CONFIG variable
+2. ansible.cfg on current location
+3. ~/.ansible.cfg on home dir of the user
+4. /etc/ansible/ansible.cfg
+
